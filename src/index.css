@@ -1,0 +1,43 @@
+:root {
+  --white: #f8f9fa;
+  --black: #343a40;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.palette-container {
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+}
+
+.palette {
+  flex: 1;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5rem 0;
+}
+
+.palette-info {
+  margin-top: 10rem;
+}
