@@ -8,7 +8,7 @@ async function fetchColorName(color) {
       throw new Error(`HTTP error! status: ${res.status}`);
     }
     const data = await res.json();
-    return data.name.value; // Extract the color name
+    return data.name.value;
   } catch (error) {
     console.error('Error fetching color name:', error);
     return 'Unknown Color';

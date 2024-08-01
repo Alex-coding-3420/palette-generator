@@ -1,8 +1,17 @@
-# React + Vite
+# Palette Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A palette generator inspired by Coolors, built using React. This app allows users to generate random color palettes, lock specific colors, and copy color codes to the clipboard. The application also determines if the background color is light or dark and adjust the text and icon colors accordingly.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Generate random color palette.
+- Lock colors to prevent them from changing during refresh.
+- Copy color codes to the clipboard.
+- Automatically adjust text and icon colors based on background brightness.
+- Fetch and display color names from The Color API
+
+## Usage
+
+- Press the Spacebar to generate a new palette of colors.
+- Click the "copy" icon to copy the color code to the clipboard.
+- Click the "lock" icon to prevent the palette from changing background color.
