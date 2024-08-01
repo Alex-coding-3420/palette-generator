@@ -11,15 +11,29 @@
   margin: 0;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 .icon-container {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  opacity: 0;
+}
+.palette:hover .icon-container {
+  opacity: 1;
+}
+.locked {
+  opacity: 1;
+}
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
-.icon {
-  font-size: 2rem;
-  cursor: pointer;
+.icon:active {
+  transform: scale(0.9);
 }
 
 .palette-container {
@@ -30,7 +44,6 @@
 
 .palette {
   flex: 1;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,4 +53,10 @@
 
 .palette-info {
   margin-top: 10rem;
+  text-align: center;
+}
+
+.palette-name {
+  text-transform: uppercase;
+  font-size: clamp(0.5rem, 0.0882rem + 1.8824vw, 1.5rem);
 }

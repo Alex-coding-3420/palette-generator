@@ -1,12 +1,14 @@
-import { FaLock, FaUnlock, FaCopy, FaArrowsAltH } from 'react-icons/fa';
+import { FaLock, FaUnlock, FaCopy } from 'react-icons/fa';
 
-function Icons() {
+function Icons({ isLocked, handleIsLocked, handleCopy }) {
   return (
-    <div className='icon-container'>
-      <FaArrowsAltH className='icon' />
-      <FaCopy className='icon' />
-      <FaLock className='icon' />
-      <FaUnlock className='icon' />
+    <div className={`icon-container ${isLocked ? 'locked' : ''}`}>
+      <FaCopy onClick={handleCopy} className='icon' />
+      {isLocked ? (
+        <FaLock onClick={handleIsLocked} className='icon' />
+      ) : (
+        <FaUnlock onClick={handleIsLocked} className='icon' />
+      )}
     </div>
   );
 }

@@ -1,12 +1,6 @@
-import Palette from './components/Palette';
+import PaletteContainer from './components/PaletteContainer';
 function App() {
-  return (
-    <div className='palette-container'>
-      {Array.from({ length: 5 }).map((_, idx) => (
-        <Palette key={idx} />
-      ))}
-    </div>
-  );
+  return <PaletteContainer />;
 }
 
 export default App;
